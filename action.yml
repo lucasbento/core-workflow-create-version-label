@@ -1,0 +1,15 @@
+name: "Add new tag as a version label"
+description: "Automatically add a new tag as version label."
+
+branding:
+  icon: "tag"
+  color: "red"
+
+inputs:
+  github-token:
+    description: The `GITHUB_TOKEN` secret.
+    required: true
+
+runs:
+  using: "node12"
+  main: "dist/index.js"
